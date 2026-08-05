@@ -47,19 +47,13 @@ HTML
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 15px 20px;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--text-main);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-
-        .logo span {
-            color: var(--accent-purple);
+        .logo-img {
+            height: 45px;
+            width: auto;
+            display: block;
         }
 
         .nav-links {
@@ -277,7 +271,9 @@ HTML
 
     <header>
         <div class="nav-container">
-            <a href="#" class="logo">the <span>creation</span></a>
+            <a href="#">
+                <img src="logo.png" alt="The Creation Studio" class="logo-img">
+            </a>
             <ul class="nav-links">
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">El Estudio</a></li>
