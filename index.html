@@ -1,9 +1,10 @@
+HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Creation Studio | Hub de Producción Audiovisual y Streaming</title>
+    <title>The Creation Studio | Content Hub Mérida</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -86,7 +87,7 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             font-weight: 800;
             margin-bottom: 20px;
             line-height: 1.2;
@@ -101,7 +102,7 @@
         .hero p {
             font-size: 1.25rem;
             color: var(--text-muted);
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto 40px;
         }
 
@@ -131,7 +132,7 @@
         .section-title {
             text-align: center;
             font-size: 2.5rem;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             font-weight: 800;
         }
 
@@ -139,16 +140,23 @@
             color: var(--accent-purple);
         }
 
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+
         .grid-4 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 25px;
         }
 
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            padding: 30px;
+            padding: 35px 30px;
             border-radius: 16px;
             transition: transform 0.3s, border-color 0.3s;
         }
@@ -159,13 +167,35 @@
         }
 
         .card h3 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 15px;
+            color: #fff;
         }
 
         .card p {
             color: var(--text-muted);
             font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .card ul {
+            list-style: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .card ul li::before {
+            content: "•";
+            color: var(--accent-purple);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
         }
 
         .about-box {
@@ -195,7 +225,7 @@
         }
 
         .features-list li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             color: var(--text-muted);
             display: flex;
             align-items: center;
@@ -237,7 +267,7 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
+            .hero h1 { font-size: 2.4rem; }
             .about-box { grid-template-columns: 1fr; padding: 30px; }
             .nav-links { display: none; }
         }
@@ -257,46 +287,67 @@
     </header>
 
     <section class="hero">
-        <h1>El primer hub profesional de producción audiovisual y streaming en <span>Mérida</span></h1>
+        <h1>El primer centro profesional de producción audiovisual, contenido digital y streaming de la <span>región andina</span></h1>
         <p>Un solo espacio insonorizado y equipado con tecnología de última generación para crear todo tu contenido sin improvisar.</p>
         <a href="#contacto" class="btn">Agenda una Visita</a>
-    </section>
-
-    <section id="servicios">
-        <h2 class="section-title">Nuestros <span>Servicios</span></h2>
-        <div class="grid-4">
-            <div class="card">
-                <h3>Podcast Studio</h3>
-                <p>Grabación de audio y videopodcast multicámara con switcheo en vivo e ideal para entrevistas a profundidad.</p>
-            </div>
-            <div class="card">
-                <h3>Content Studio</h3>
-                <p>Producción de reels, TikToks de alto impacto, videos promocionales, cursos online y contenido corporativo.</p>
-            </div>
-            <div class="card">
-                <h3>Gaming & Streaming</h3>
-                <p>Espacios dedicados para streaming profesional en 1080p/4K, creación de contenido gamer y torneos pequeños.</p>
-            </div>
-            <div class="card">
-                <h3>Eventos Deportivos</h3>
-                <p>Producción y cobertura audiovisual profesional de torneos, carreras y competiciones.</p>
-            </div>
-        </div>
     </section>
 
     <section id="nosotros">
         <div class="about-box">
             <div class="about-text">
                 <h2>¿Qué es The Creation Studio?</h2>
-                <p>El reto que enfrentan marcas y creadores hoy en día es crear contenido profesional de alta calidad sin improvisar. Construimos el espacio definitivo en la región andina.</p>
+                <p>El reto que enfrentan marcas y creadores en Mérida es crear contenido profesional sin tener que improvisar. Unimos en un mismo espacio todo lo que necesitas bajo un estándar profesional.</p>
                 <ul class="features-list">
-                    <li>Estudio acústicamente tratado</li>
-                    <li>Equipos de gama alta y hardware moderno</li>
-                    <li>Soporte técnico y asesoría integral</li>
+                    <li>Alta demanda de contenido para redes sociales y marketing digital</li>
+                    <li>Crecimiento acelerado de podcasts y videopodcasts</li>
+                    <li>Auge del contenido gamer y el streaming profesional</li>
+                    <li>Producción audiovisual corporativa y de eventos</li>
                 </ul>
             </div>
             <div>
-                <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80" alt="Estudio de grabación" style="width: 100%; border-radius: 12px; object-fit: cover;">
+                <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80" alt="The Creation Studio Podcast" style="width: 100%; border-radius: 12px; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2 class="section-title">Líneas de <span>Servicio</span></h2>
+        <p class="section-subtitle">Cuatro líneas especializadas de negocio con un mismo equipo profesional.</p>
+        <div class="grid-4">
+            <div class="card">
+                <h3>Podcast Studio</h3>
+                <p>Espacio insonorizado diseñado para que tu marca se vea y suene impecable.</p>
+                <ul>
+                    <li>Audio de alta resolución</li>
+                    <li>Videopodcast multicámara con switch en vivo</li>
+                    <li>Podcast corporativo e influencers</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Content Studio</h3>
+                <p>Contenido profesional para creadores, emprendedores y empresas que buscan posicionarse.</p>
+                <ul>
+                    <li>Reels y TikToks de alto impacto</li>
+                    <li>Videos promocionales y comerciales</li>
+                    <li>Grabación de cursos online</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Gaming & Streaming</h3>
+                <p>Espacios dedicados a la creciente comunidad gamer con hardware de última generación.</p>
+                <ul>
+                    <li>Streaming profesional en 1080p/4K</li>
+                    <li>Creación de contenido y gameplays</li>
+                    <li>Sede para torneos pequeños</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Eventos Deportivos</h3>
+                <p>Llevamos la calidad de estudio al exterior para cubrir competiciones.</p>
+                <ul>
+                    <li>Torneos y carreras</li>
+                    <li>Transmisión en vivo y cobertura audiovisual</li>
+                </ul>
             </div>
         </div>
     </section>
